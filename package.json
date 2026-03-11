@@ -1,0 +1,23 @@
+{
+  "name": "90340",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-fundamentos.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node 1-fundamentos.js",
+    "dev": "node --watch 1-fundamentos.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nirbeat/coderBack1_90340.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Nirbeat/coderBack1_90340/issues"
+  },
+  "homepage": "https://github.com/Nirbeat/coderBack1_90340#readme"
+}
