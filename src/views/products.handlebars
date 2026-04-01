@@ -4,7 +4,7 @@
 
 {{#if products}}
 {{#each products}}
-{{#if this.status}}
+{{#if (stockAvailable this.stock)}}
 <p>{{this.id}} - {{this.title}} - {{this.price}} - {{this.stock}}</p>
 {{else}}
 <p>{{this.id}} - {{this.title}} - No disponible</p>

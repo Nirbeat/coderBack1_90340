@@ -4,7 +4,7 @@
         "description": "Monitor LED Full HD 144Hz",
         "price": "25000",
         "category": "tecnologia",
-        "stock": "10",
+        "stock": 0,
         "status": true,
         "code": "tec001",
         "thumbnails": []
@@ -198,5 +198,16 @@
         "status": true,
         "code": "tec008",
         "thumbnails": []
+    },
+    {
+        "title": "producto 1",
+        "description": "adadsasd",
+        "price": "100",
+        "stock": "3",
+        "category": "asdasd",
+        "thumbnails": [
+            "C:\\Users\\maxin\\OneDrive\\Escritorio\\CoderHouse\\back 1\\90340\\src\\public\\uploads\\Gemini_Generated_Image_ocoiv8ocoiv8ocoi.png"
+        ],
+        "id": null
     }
 ]
