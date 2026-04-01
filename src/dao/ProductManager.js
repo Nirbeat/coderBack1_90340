@@ -1,7 +1,7 @@
 import fs from "fs/promises";
 import { GenericManager } from "./GenericManager.js";
 
-export default class ProductManager extends GenericManager {
+class ProductManager extends GenericManager {
 
     constructor(filePath) {
         super(filePath)
@@ -24,7 +24,7 @@ export default class ProductManager extends GenericManager {
         // PORQUE SI SE EMPIEZAN A BORRAR REGISTROS, SE PUEDEN REPETIR LOS ID
         if (products.length == 0) product.id = 1
         else product.id = products[products.length - 1].id + 1;
-        
+
         products.push(product);
         await fs.writeFile(this.filePath, JSON.stringify(products), { encoding: "utf-8" });
         return product;
@@ -33,7 +33,7 @@ export default class ProductManager extends GenericManager {
     async updateProductById(pid, updatedData) {
         const products = await this.getProducts();
         const requiredProductIndex = products.findIndex((product) => product.id == pid);
-        products[requiredProductIndex] = {...updatedData, id:parseInt(pid)};
+        products[requiredProductIndex] = { ...updatedData, id: parseInt(pid) };
         await fs.writeFile(this.filePath, JSON.stringify(products), { encoding: "utf-8" });
         return products[requiredProductIndex];
     }
@@ -46,3 +46,5 @@ export default class ProductManager extends GenericManager {
         return requiredProduct;
     }
 }
+
+export default new ProductManager("products.json")
