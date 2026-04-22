@@ -23,6 +23,7 @@
   "dependencies": {
     "express": "^5.2.1",
     "express-handlebars": "^8.0.1",
+    "mongoose": "^8.23.0",
     "multer": "^2.1.1"
   }
 }
